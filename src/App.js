@@ -51,7 +51,7 @@ class Contact extends Component {
           message: this.state.message
       }
       
-      axios.post('API_URI', data)
+      axios.post('https://contact-us-mail-react-gqws6enhu.now.sh', data)
       .then( res => {
           this.setState({ sent: true }, this.resetForm())
       })
