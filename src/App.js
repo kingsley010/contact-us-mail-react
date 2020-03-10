@@ -17,23 +17,23 @@ class Contact extends Component {
            <form id="contact-form" onSubmit={ (e) => this.formSubmit(e)}>
               <br></br>
               <br></br>
-           <div class="form-group container col-md-6">
-              <label class="name" htmlFor="name">Your Name</label>
-              <input class="form-control" onChange={e => this.setState({ name: e.target.value})} name="name" type="text" placeholder="Your Name" value={this.state.name} required/>
+           <div className="form-group container col-md-6">
+              <label className="name" htmlFor="name">Your Name</label>
+              <input className="form-control" onChange={e => this.setState({ name: e.target.value})} name="name" type="text" placeholder="Your Name" value={this.state.name} required/>
            </div>
 
-           <div class="form-group container col-md-6">
-              <label class="email" htmlFor="email">Your Email</label>
-              <input class="form-control" onChange={(e) => this.setState({ email: e.target.value})} name="email" type="email" placeholder="your@email.com" value={this.state.email} required/>
+           <div className="form-group container col-md-6">
+              <label className="email" htmlFor="email">Your Email</label>
+              <input className="form-control" onChange={(e) => this.setState({ email: e.target.value})} name="email" type="email" placeholder="your@email.com" value={this.state.email} required/>
            </div>
 
-           <div class="form-group container col-md-6">
-              <label class="message" htmlFor="message">Your Message</label>
-              <textarea class="form-control" onChange={e => this.setState({ message: e.target.value})} name="message" type="text" placeholder="Please write your message here" value={this.state.message} required/>
+           <div className="form-group container col-md-6">
+              <label className="message" htmlFor="message">Your Message</label>
+              <textarea className="form-control" onChange={e => this.setState({ message: e.target.value})} name="message" type="text" placeholder="Please write your message here" value={this.state.message} required/>
            </div>  
          
-           <div class="button--container container col-md-6">
-               <button type="submit" class="btn btn-primary" >{ this.state.buttonText }</button>
+           <div className="button--container container col-md-6">
+               <button type="submit" className="btn btn-primary" >{ this.state.buttonText }</button>
            </div>
          </form>
         );
