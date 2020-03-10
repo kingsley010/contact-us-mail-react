@@ -1,5 +1,6 @@
 {
   "name": "contact-us-mail-react",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,16 +19,8 @@
     "eject": "react-scripts eject",
     "now-build": "react-scripts build && mv build dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/perfect090/contact-us-mail-react.git"
-  },
   "author": "Obioha Kingsley",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/perfect090/contact-us-mail-react/issues"
-  },
-  "homepage": "https://github.com/perfect090/contact-us-mail-react#readme",
   "eslintConfig": {
     "extends": "react-app"
   },
