@@ -52,7 +52,7 @@ class Contact extends Component {
           message: this.state.message
       }
       
-      axios.post('https://contact-us-mail-node-express-mkyviwooz.now.sh/', data)
+      axios.post('https://contact-us-mail-node-express-o43qgy9wy.now.sh/api/v1', data)
       .then( res => {
           this.setState({ sent: true }, this.resetForm())
       })
