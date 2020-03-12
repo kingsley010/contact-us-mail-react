@@ -19,7 +19,7 @@ class Contact extends Component {
               <br></br>
            <div className="form-group container col-md-6">
               <label className="name" htmlFor="name">Your Name</label>
-              <input className="form-control" onChange={e => this.setState({ name: e.target.value})} name="name" type="text" placeholder="Your Name" value={this.state.name} required/>
+              <input className="form-control" onChange={e => this.setState({ name: e.target.value})} name="name" type="text" placeholder="Your Name" value={this.state.name} />
            </div>
 
            <div className="form-group container col-md-6">
