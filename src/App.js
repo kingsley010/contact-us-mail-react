@@ -44,7 +44,7 @@ class Contact extends Component {
     
       this.setState({
           buttonText: '...sending'
-      })
+      });
     
       let data = {
           name: this.state.name,
@@ -52,13 +52,13 @@ class Contact extends Component {
           message: this.state.message
       }
       
-      axios.post('API_URI', data)
+      axios.post('https://contact-us-mail-node-express-git-now.perfect090.now.sh/api/v1', data)
       .then( res => {
           this.setState({ sent: true }, this.resetForm())
       })
       .catch( () => {
         console.log('Message not sent')
-      })
+      });
     }
 
     resetForm = () => {
@@ -67,7 +67,7 @@ class Contact extends Component {
           message: '',
           email: '',
           buttonText: 'Message Sent'
-      })
+      });
   }
 
 }
