@@ -44,7 +44,7 @@ class Contact extends Component {
     
       this.setState({
           buttonText: '...sending'
-      })
+      });
     
       let data = {
           name: this.state.name,
@@ -58,7 +58,7 @@ class Contact extends Component {
       })
       .catch( () => {
         console.log('Message not sent')
-      })
+      });
     }
 
     resetForm = () => {
@@ -67,7 +67,7 @@ class Contact extends Component {
           message: '',
           email: '',
           buttonText: 'Message Sent'
-      })
+      });
   }
 
 }
